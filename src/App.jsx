@@ -5,6 +5,7 @@ import SoundSection from "./components/SoundSection";
 import DisplaySection from "./components/DisplaySection";
 import WebgiViewer from "./components/WebgiViewer";
 import Loader from "./components/Loader";
+import ChipsetSection from "./components/ChipsetSection";
 
 function App() {
   const webgiViewerRef = useRef();
@@ -21,6 +22,7 @@ function App() {
         <Nav />
         <Jumbotron />
         <SoundSection />
+        <ChipsetSection/>
         <DisplaySection triggerPreview={handlePreview} />
       </div>
       <WebgiViewer contentRef={contentRef} ref={webgiViewerRef} />

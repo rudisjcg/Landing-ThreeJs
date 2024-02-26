@@ -285,6 +285,59 @@ nav .link-styled {
   }
 }
 
+.chipset-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+  min-height: 831px;
+  opacity: 0;
+}
+
+.chipset-section .title {
+  color: #86868b;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+.chipset-section .text {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 0.5px;
+  margin-top: 16px;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 18px;
+
+}
+
+.chipset-section .description {
+ 
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+
+.chipset-section .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .loader {
   position: fixed;
   z-index: 2;
@@ -411,7 +464,8 @@ nav .link-styled {
 
   .jumbotron-section.wrapper,
   .sound-section.wrapper,
-  .display-section.wrapper {
+  .display-section.wrapper,
+  .chipset-section {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
@@ -419,13 +473,14 @@ nav .link-styled {
 
   .jumbotron-section .description,
   .sound-section .description,
-  .display-section .description {
+  .display-section .description{
     font-size: 14px;
   }
 
   .jumbotron-section.wrapper,
   .sound-section .content,
-  .display-section.wrapper {
+  .display-section.wrapper,
+  .chipset-section {
     padding-top: 20px;
   }
 
@@ -441,5 +496,24 @@ nav .link-styled {
 
   .sound-section .content {
     max-width: 100%;
+  }
+
+  .chipset-section {
+    align-items: center;
+  }
+
+  .chipset-section .text {
+    font-size: 36px;
+  }
+
+  .chipset-section .description {
+    font-size: 14px;
+    text-align: center;
+    width: 180px;
+  }
+
+  .chipset-section .picture {
+    width: 100%;
+    max-width: 300px;
   }
 }

@@ -54,6 +54,30 @@ export const scrollAnimation = (position, target, onUpdate, isMobile) => {
 
         },
     })
+    .to(position, { 
+        x: !isMobile ? 5.94 : -7.56,
+        y: !isMobile ? -0.89 : 0.04, 
+        z: !isMobile ? 12.77 : -0.48,
+        scrollTrigger: {
+            trigger: '.chipset-section',
+            start: 'top bottom',
+            end: 'top top',
+            scrub: 2,
+            immediateRender: false,
+
+        },
+    })
+    .to(".chipset-section", { 
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.sound-section',
+            start: 'top bottom',
+            end: 'top top',
+            scrub: 2,
+            immediateRender: false,
+
+        },
+    })
     .to(position, {
         x: !isMobile ? 1.56 : 9.36,
         y: !isMobile ? 5.0 : 10.95, 

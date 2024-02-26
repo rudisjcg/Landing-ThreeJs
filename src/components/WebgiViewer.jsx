@@ -74,6 +74,8 @@ const WebgiViewer = forwardRef((props, ref) => {
 
     const manager = await viewer.addPlugin(AssetManagerPlugin);
 
+    console.log(viewer)
+
     const camera = viewer.scene.activeCamera;
     const position = camera.position;
     const target = camera.target;
